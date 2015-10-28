@@ -1,0 +1,5 @@
+#!/bin/sh
+
+programDir=$(cd $(dirname $0);pwd)
+
+java -Xdock:icon=${programDir}/../Resources/{{ICON}} -jar ${programDir}/{{JAR}} "$@"
